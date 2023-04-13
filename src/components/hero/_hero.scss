@@ -1,0 +1,46 @@
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100svh;
+  width: 100%;
+
+  & > * {
+    flex: 1 1 20em;
+  }
+}
+
+.hero__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & .hero__title {
+    font-family: $poppinsFont;
+    font-weight: 300;
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    text-align: center;
+  }
+}
+
+.hero__img {
+  background: url($heroImg) no-repeat center center;
+  background-size: cover;
+}
+
+.hero__catalog {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: $poppinsFont;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 30px;
+}
+
+.hero__buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  gap: 20px;
+}

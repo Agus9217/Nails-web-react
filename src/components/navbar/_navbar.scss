@@ -1,0 +1,88 @@
+.nav__header, .nav__navbar > ul, .nav__social-group > ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav__header {
+  align-items: center;
+  background: $smoke;
+  justify-content: space-around;
+  min-height: 80px;
+  position: fixed;
+  text-align: center;
+  font-family: $samsungFont;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav__icon-menu {
+  display: none;
+  font-size: 2rem;
+}
+
+.nav__navbar > ul, .nav__social-group > ul {
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav__navbar, .nav__social-group {
+  width: 300px;
+}
+
+.nav__logo-container {
+  max-width: 60px;
+}
+
+.nav__logo-container > img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.nav__link {
+  color: $black;
+
+  & > hr {
+    border: 1px solid $black;
+    width: 0;
+    opacity: 0;
+    transition: width .4s ease-in-out;
+  }
+
+  &:hover > hr {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.active > hr {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav__social-link {
+  font-size: 1.5rem;
+  color: $black;
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav__header {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .nav__navbar {
+    display: none;
+  }
+
+  .nav__social-group {
+    display: none;
+  }
+
+  .nav__icon-menu {
+    display: block;
+  }
+}
+
+
+
