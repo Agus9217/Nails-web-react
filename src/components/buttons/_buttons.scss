@@ -1,14 +1,16 @@
-.button__orange {
+.button__hero {
   background: none;
-  padding: 10px 15px;
   border: 1px solid $grey;
   border-radius: 50px;
-  outline: none;
   cursor: pointer;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px 15px;
+  transition: all .3s ease-in-out;
+}
 
-  &:hover {
-    border-color: $lightOrange;
-    background: $lightOrange;
-    color: $white;
-  }
+.orange:hover {
+  background: $lightOrange;
+  border-color: $lightOrange;
+  color: $white;
 }

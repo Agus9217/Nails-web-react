@@ -1,4 +1,4 @@
-import { OrangeButton } from "../buttons"
+import { ButtonsColors } from "../buttons"
 import { FiCornerRightDown } from 'react-icons/fi'
 
 
@@ -11,12 +11,12 @@ export const Hero = () => {
         </h1>
         <span className="hero__catalog">Nuestro Catálogo <FiCornerRightDown /></span>
         <div className="hero__buttons-group">
-          <OrangeButton>Para Uñas</OrangeButton>
-          <OrangeButton>Para Uñas</OrangeButton>
-          <OrangeButton>Para Uñas</OrangeButton>
-          <OrangeButton>Para Uñas</OrangeButton>
-          <OrangeButton>Para Uñas</OrangeButton>
-          <OrangeButton>Para Uñas</OrangeButton>
+          <ButtonsColors color='orange'>Uñas</ButtonsColors>
+          <ButtonsColors color='orange'>Peluqueria</ButtonsColors>
+          <ButtonsColors color='orange'>Tintura</ButtonsColors>
+          <ButtonsColors color='orange'>Manos</ButtonsColors>
+          <ButtonsColors color='orange'>Pies</ButtonsColors>
+          <ButtonsColors color='orange'>Cortes</ButtonsColors>
         </div>
       </div>
       <div className="hero__img">

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const OrangeButton = ({ children }) => {
+export const ButtonsColors = ({ children, color }) => {
   return (
-    <button className="button__orange">{ children }</button>
+    <button className={`button__hero ${color}`}>{ children }</button>
   )
 }
