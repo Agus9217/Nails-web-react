@@ -1,5 +1,5 @@
 import { ButtonsColors } from "../buttons"
-import { FiCornerRightDown } from 'react-icons/fi'
+import { BsArrowRightCircle } from 'react-icons/bs'
 
 
 export const Hero = () => {
@@ -9,7 +9,7 @@ export const Hero = () => {
         <h1 className="hero__title">
           Realza tu belleza femenina
         </h1>
-        <span className="hero__catalog">Nuestro Catálogo <FiCornerRightDown /></span>
+        <span className="hero__catalog">Nuestro Catálogo <BsArrowRightCircle /></span>
         <div className="hero__buttons-group">
           <ButtonsColors color='orange'>Uñas</ButtonsColors>
           <ButtonsColors color='orange'>Peluqueria</ButtonsColors>
